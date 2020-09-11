@@ -5,3 +5,5 @@
 -  a tömb látható legyen
 - tömb kiírás metódus
 - tömb elemeit egy sorba a consolra írja
+- összegzés
+- megszámlálás(3-al osztható számok)

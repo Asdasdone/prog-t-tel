@@ -16,11 +16,35 @@ namespace prog_tétel
             {
                 Console.Write("{0,2}, ",tomb[i]);
             }
+            Console.WriteLine();
 
+        }
+        static void osszegzes()
+        {
+            int ossz = 0;
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                ossz += tomb[i];
+            }
+            Console.WriteLine("Összesen: {0}",ossz);
+        }
+        static void megszam()
+        {
+            int db = 0;
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                if (tomb[i]%3==0)
+                {
+                    db++;
+                }
+            }
+            Console.WriteLine("3mal osztható számok darabja: {0}",db);
         }
         static void Main(string[] args)
         {
             kiir();
+            osszegzes();
+            megszam();
             Console.ReadKey();
         }
     }
