@@ -40,11 +40,29 @@ namespace prog_tétel
             }
             Console.WriteLine("3mal osztható számok darabja: {0}",db);
         }
+        static void vane()
+        {
+            int i = 0;
+            while (i<tomb.Length && tomb[i]!=69)
+            {
+                i++;
+            }
+            if (i<tomb.Length)
+            {
+                Console.WriteLine("van 69-es szám");
+            }
+            else
+            {
+                Console.WriteLine("nincsen 69-es szám");
+            }
+
+        }
         static void Main(string[] args)
         {
             kiir();
             osszegzes();
             megszam();
+            vane();
             Console.ReadKey();
         }
     }
