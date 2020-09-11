@@ -8,3 +8,4 @@
 # összegzés
 # megszámlálás(3-al osztható számok)
 # eldöntés (van e 69(nice))
+# kiválasztás(hanyadik az 50)
