@@ -8,7 +8,7 @@ namespace prog_tétel
 {
     class Program
     {
-        static int[] tomb = new int[10] {12, 7, 50, 4, 45, 99, 1, 8, 95, 2};
+        static int[] tomb = new int[10] {12, 7, 53, 4, 45, 99, 1, 8, 95, 2};
         
         static void kiir()
         {
@@ -67,6 +67,24 @@ namespace prog_tétel
             }
             Console.WriteLine("50 a {0}. helyen van",i+1);
         }
+        static void letezik()
+        {
+            
+            int i = 0;
+            while (i<tomb.Length && tomb[i]!=50)
+            {
+                i++;
+            }
+            if (i < tomb.Length)
+            {
+                Console.WriteLine("van 50-es szám. sorszáma: {0}",i+1);
+            }
+            else
+            {
+                Console.WriteLine("nincsen 50-es szám");
+            }
+
+        }
         static void Main(string[] args)
         {
             kiir();
@@ -74,6 +92,7 @@ namespace prog_tétel
             megszam();
             vane();
             hol();
+            letezik();
             Console.ReadKey();
         }
     }
