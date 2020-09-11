@@ -8,8 +8,20 @@ namespace prog_tétel
 {
     class Program
     {
+        static int[] tomb = new int[10] {12, 7, 2, 4, 45, 99, 1, 8, 95, 50};
+        
+        static void kiir()
+        {
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                Console.Write("{0,2}, ",tomb[i]);
+            }
+
+        }
         static void Main(string[] args)
         {
+            kiir();
+            Console.ReadKey();
         }
     }
 }
